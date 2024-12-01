@@ -69,4 +69,3 @@ function applyDiscount() {
       emptyMessage.style.display = 'none';
     }
   }
-  
