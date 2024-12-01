@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  background: #5CDB95;
+  color: #EDF5E1;
+  font-family: 'Rowdies', cursive;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+button {
+  background-color: #EDF5E1;
+  color: #05386B;
+  font-family: 'Rowdies', cursive;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  background: #05386B;
+  max-width: 450px;
+  width: 100%;
+  display: table;
+  margin: 40px auto;
+  border: 1px solid #5CDB95;
+  padding: 20px;
+}
+
+input {
+  border: none;
+  display: block;
+  width: 98%;
+  line-height: 1.5;
+  padding: 8px 0 8px 10px;
+  border-bottom: 1px solid #F0EFEA;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  color: #EDF5E1;
+  font-weight: 400;
+  border-bottom: 1px solid #cfcbcc;
+  line-height: 1.5;
+  padding: 8px 0;
+}
+
+ul li:before {
+  content: "\25A1";
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
+ul li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.button {
+  text-align: center;
+}
+
+.checked {
+  color: green;
+}
+
+.checked:before {
+  content: "\2713";
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
+.checked:hover {
+  text-decoration: none;
+}
+
+.checked:hover:after {
+  content: " (remove)";
+  color: red;
+  text-align: right;
+}
+
+/* Cart icon and discount styles */
+#cart-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#cart-count {
+  font-size: 14px;
+  color: red;
+}
+
+#discounts {
+  background: #05386B;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+#product-list li {
+  margin-bottom: 10px;
+}
+
+.discount {
+  color: #ff6347;
+  font-weight: bold;
+}
+
+#cart {
+  background: #05386B;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
