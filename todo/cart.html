@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/base.css">
+  <title>Your Cart</title>
+</head>
+<body>
+  <header>
+    <h1>Your Cart</h1>
+    <div id="cart-icon">
+      <img src="backpack-icon.png" alt="Cart Icon" />
+      <span id="cart-count" class="cart-count">0</span>
+    </div>
+  </header>
+
+  <div id="cart-container">
+    <ul id="cart-list"></ul>
+    <p id="total-price">Total: $0.00</p>
+    <button onclick="clearCart()">Clear Cart</button>
+
+    <div id="empty-cart-message" style="display: none;">
+      <p>Your cart is empty!</p>
+      <button onclick="window.location.href='index.html'">Continue Shopping</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Cart Footer Information</p>
+  </footer>
+
+  <script src="scripts/cart.js"></script>
+</body>
+</html>

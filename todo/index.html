@@ -3,22 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="base.css">
-  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
-  <title>To Do List</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <title>Product Listing</title>
 </head>
 <body>
-  <h1>To-Do List</h1>
-<div class="container">
-  
-  <form  action="#">
-    <input type="text" name="item" id="item" placeholder="Add New" />
-</form>  
-<ul id="list"></ul>
-</div>
-<div class="button">
-  <button onclick="clearStorage()">Clear</button>
-</div>
-<script src="gettodo.js"></script>
+  <header>
+    <h1>Welcome to Our Store</h1>
+    <div id="cart-icon">
+      <img src="backpack-icon.png" alt="Cart Icon" />
+      <span id="cart-count" class="cart-count">0</span>
+    </div>
+  </header>
+
+  <section class="product">
+    <h2>Product Name</h2>
+    <p id="price">$100.00</p>
+    <p id="discounted-price">Discounted Price: $80.00</p>
+    <input type="number" id="discount-input" placeholder="Enter discount percentage" />
+    <button onclick="applyDiscount()">Apply Discount</button>
+    <button onclick="addToCart('Product Name', 80)">Add to Cart</button>
+  </section>
+
+  <footer>
+    <p>Store Footer Information</p>
+  </footer>
+
+  <script src="scripts/product.js"></script>
 </body>
 </html>
